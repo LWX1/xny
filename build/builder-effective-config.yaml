@@ -1,0 +1,30 @@
+directories:
+  output: build
+  buildResources: build
+productName: 龙1
+appId: long
+copyright: 龙的作品
+compression: store
+asar: false
+extraResources:
+  - from: ./extraResources/
+    to: extraResources
+win:
+  icon: build/icons/icon.ico
+  target:
+    - target: nsis
+      arch:
+        - ia32
+nsis:
+  oneClick: false
+  guid: xxxx
+  perMachine: true
+  allowElevation: true
+  allowToChangeInstallationDirectory: true
+  installerIcon: ./build/icons/aaa.ico
+  uninstallerIcon: ./build/icons/bbb.ico
+  installerHeaderIcon: ./build/icons/aaa.ico
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: 龙2
+electronVersion: 11.0.4
